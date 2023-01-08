@@ -10,12 +10,10 @@ export const Projects = () => {
 
   async function fetchData() {
     await fetch("https://git-scraper.herokuapp.com/", {
-      method: "POST",
-      body: JSON.stringify("newan0805"),
     })
       .then((res) => res.json())
       .then((data) => setData(data));
-};
+  };
 
 useEffect(() => {
   fetchData();
