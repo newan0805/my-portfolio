@@ -9,7 +9,7 @@ export const Projects = () => {
   const [data, setData] = useState([]);
 
   async function fetchData() {
-    await fetch("https://git-scraper.herokuapp.com/", {
+    await fetch("https://newan0805-projects.herokuapp.com/", {
     })
       .then((res) => res.json())
       .then((data) => setData(data));
